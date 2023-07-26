@@ -165,6 +165,7 @@ button {
   letter-spacing: 0.02em;
   max-width: 496px;
   margin-bottom: 48px;
+  padding: 24px 0;
 }
 .heder-btn {
   color: var(--white, #fff);
@@ -200,7 +201,7 @@ button {
   gap: 24px;
 }
 .advantages-item {
-  width: calc((100% -3 * 24px) / 4);
+  width: calc((100% -72px) / 4);
 }
 .advantages-sub-title {
   color: var(--navyblue, #2e2f42);
@@ -221,6 +222,7 @@ button {
 
 /*--------------BOING--------------*/
 .boing {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 .boing-list {
@@ -254,9 +256,8 @@ button {
 .team-list {
   display: flex;
   gap: 24px;
-  padding: 72px 156px 120px 156px;
 }
-.team-one-title {
+.team-title {
   color: var(--navyblue, #2e2f42);
   /* Header 2 */
   text-align: center;
@@ -264,13 +265,18 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-bottom: 8px;
+  margin-bottom: 72px;
 }
 .team-item {
   width: calc((100% -72px) / 4);
   background: var(--white, #fff);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 32px;
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 .team-our-title {
   color: var(--navyblue, #2e2f429f);
@@ -281,6 +287,8 @@ button {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   text-align: center;
+  display: flex;
+  gap: 24px;
 }
 .team-item-text {
   color: var(--slate, #434455);
@@ -290,8 +298,6 @@ button {
   letter-spacing: 0.02em;
   margin-bottom: 32px;
   text-align: center;
-}
-.team-pic {
 }
 
 /**-----------------FOOTER-----------------*/
