@@ -49,6 +49,22 @@ ol {
 img {
   display: block;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
 .container {
   /* width: 1440px;*/
   width: 100%;
@@ -177,9 +193,7 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.visually-hidden {
-  display: none;
-}
+
 .advantages-list {
   padding: 0 156px;
   display: flex;
@@ -325,10 +339,9 @@ img {
 /**-----------------GALERY-----------*/
 .wrap {
   padding: 96px 0 120px 0;
+  padding: 24px 0;
 }
-.visually-hidden {
-  display: none;
-}
+
 .galery-btn {
   display: flex;
   gap: 24px;
