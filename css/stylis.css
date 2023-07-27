@@ -124,6 +124,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding: 24px 0;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -258,7 +259,6 @@ button {
   display: flex;
   list-style: none;
   gap: 24px;
-  width: calc((100% -72px) / 4);
 }
 .team-title {
   color: var(--navyblue, #2e2f42);
@@ -271,6 +271,7 @@ button {
   margin-bottom: 72px;
 }
 .team-item {
+  width: calc((100% -72px) / 4);
   background: var(--white, #fff);
   border-radius: 0px 0px 4px 4px;
 }
