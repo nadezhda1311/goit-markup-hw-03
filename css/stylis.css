@@ -79,7 +79,6 @@ button {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
-  padding: 24px 0;
 }
 .header-container {
   display: flex;
@@ -113,6 +112,7 @@ button {
 .header-menu-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 .header-menu-link {
   color: var(--navyblue, #2e2f42);
@@ -161,29 +161,26 @@ button {
   /* Header 1 */
   font-size: 56px;
   max-width: 496px;
-  margin-bottom: 48pxs;
+  margin: 0 auto 48px auto;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  max-width: 496px;
-  margin-bottom: 48px;
-  padding: 24px 0;
 }
 .heder-btn {
   color: var(--white, #fff);
   /* Button Text */
-  font-family: inherit;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   background: var(--iris, #4d5ae5);
+  display: inline-flex;
   padding: 16px 32px;
-  display: block;
-  min-width: 169px;
-  height: 56px;
+  align-items: flex-start;
+  gap: 10px;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .heder-btn:hover,
 .heder-btn:focus {
@@ -201,9 +198,9 @@ button {
   display: flex;
   gap: 24px;
   padding: 24px 0;
-  width: calc((100% -72px) / 4);
 }
 .advantages-item {
+  width: calc((100% -72px) / 4);
 }
 .advantages-sub-title {
   color: var(--navyblue, #2e2f42);
@@ -230,7 +227,7 @@ button {
 .boing-list {
   display: flex;
   gap: 24px;
-  margin-bottom: 72px;
+  list-style: none;
   padding: 24px 0;
 }
 .boing-item {
@@ -253,13 +250,11 @@ button {
   background: var(--cloud, #f4f4fd);
   padding: 120px 0;
 }
-.team-our {
-  padding: 32px 0;
-}
+
 .team-list {
   display: flex;
+  list-style: none;
   gap: 24px;
-  padding: 24px 0;
   width: calc((100% -72px) / 4);
 }
 .team-title {
@@ -275,15 +270,13 @@ button {
 .team-item {
   background: var(--white, #fff);
   border-radius: 0px 0px 4px 4px;
-  display: inline-flex;
-  padding-bottom: 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
+}
+.team-list-section {
+  padding: 32px 0;
+  text-align: center;
 }
 .team-our-title {
-  color: var(--navyblue, #2e2f429f);
+  color: var(--navyblue, #2e2f42);
   /* Header 3 */
   font-size: 20px;
   font-weight: 500;
@@ -291,8 +284,6 @@ button {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   text-align: center;
-  display: flex;
-  gap: 32px;
 }
 .team-item-text {
   color: var(--slate, #434455);
@@ -362,22 +353,10 @@ button {
 .galery-btn-list {
   text-decoration: none;
   padding: 12px 24px;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-}
-.btn-item {
-  color: var(--white, #fff);
-  /* Button Text */
-  font-family: inherit;
-  text-align: center;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  border-radius: 4px;
-  border: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--ocean, #404bbf);
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  -webkit-appearance: button;
 }
 .btn-item {
   color: var(--iris, #4d5ae5);
@@ -389,6 +368,10 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--cloud, #f4f4fd);
@@ -400,23 +383,18 @@ button {
   border: 1px solid transparent;
 }
 
-.galery-list-portfolio {
-  padding: 32px 16px;
-  border: 1px solid #e7e7e7;
-  border-top: none;
-}
 .galery-list {
+  width: calc((100% -48px) / 3);
+  padding: 32px 16px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 24px;
-  row-gap: 48px;
+  row-gap: 45px;
   margin-bottom: 72px;
-  border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
 }
 .galery-list-item {
-  width: calc((100% -48px) / 3);
   display: flex;
   padding: 0px 16px;
   flex-direction: column;
@@ -424,12 +402,14 @@ button {
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+  box-sizing: border-box;
 }
 .galery-title-photo {
   width: 360px;
   height: 300px;
   flex-shrink: 0;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 .section-galery-title {
   color: var(--navyblue, #2e2f42);
@@ -438,7 +418,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .section-galery-text {
   color: var(--slate, #434455);
