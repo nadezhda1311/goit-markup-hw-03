@@ -318,6 +318,8 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-item-text {
   color: var(--cloud, #f4f4fd);
@@ -372,7 +374,6 @@ button {
 }
 
 .galery-list {
-  width: calc((100% - 48px) / 3);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -381,6 +382,7 @@ button {
   background: var(--white, #fff);
 }
 .galery-list-item {
+  width: calc((100% - 48px) / 3);
   justify-content: center;
   align-items: flex-start;
   gap: 32px;
